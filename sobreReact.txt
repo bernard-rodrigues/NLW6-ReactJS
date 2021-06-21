@@ -1,0 +1,66 @@
+Inicializar o React em modo "Fast Refresh" (inventei):
+    yarn start
+
+HTML dentro do JS: JSX
+HTML dentro do TS: TSX
+
+Componentes: pequenos pedaços de código que, juntos, formam a minha aplicação:
+    - Sidebar
+    - Menus
+    - Cabeçalhos
+    - etc.
+
+Componentes React são funções.
+
+Em React, TUDO é componente.
+
+Propriedade (conhecido como atributo no HTML):
+    são informações que a gente pode passar para um componente se comportar de maneira diferente.
+    por exemplo <a> pode receber o atributo href
+
+Componente React:
+    Num documento tsx eu declaro o comportamento de cada componente e a tipagem de seus atributos.
+
+Existe um atributo disponível para todo componente React chamado children. Todo conteúdo dentro de uma tag React é diretamente atribuído ao children.
+
+Ex.:
+    type componenteReactProps = {
+        children: String;
+    }
+
+    export function componenteReact(props: componenteReactProps){
+        return(
+            <h1>props.children</h1>
+        )
+    }
+
+    Quando a função componenteReact for chamada, posso colocar uma string dentro dela.
+
+    Ex.:
+        <componenteReact>Header</componenteReact>
+
+Caso eu utilizasse outros atributos que não o children:
+
+Ex.:
+    type componenteReactProps = {
+        header: String;
+    }
+
+    export function componenteReact(props: componenteReactProps){
+        return(
+            <h1>props.header</h1>
+        )
+    }
+
+    A forma de chamar a função seria a seguinte:
+
+        <componenteReact header="Header"/>
+
+Um conceito importante do React é o da imutabilidade. Nós não alteramos o valor de uma variável de estado, mas criamos sempre um novo estado através das funções de set.
+
+Ex.:
+    const [variavel, setVariavel] = useState(valorInicial)
+
+    function mudaVariavel(){
+        setVariavel(mudancaAFazer);
+    }
