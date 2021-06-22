@@ -64,3 +64,13 @@ Ex.:
     function mudaVariavel(){
         setVariavel(mudancaAFazer);
     }
+
+Para trabalhar o roteamento das páginas utilizamos uma biblioteca React de roteamento:
+    yarn add react-router-dom
+
+    Essa biblioteca costuma dar erro quando trabalhando com typescript. Para corrigir:
+    yarn add @types/react-router-dom
+
+Contexto:
+    A forma que o React utiliza para compartilhar informações entre todos os componentes da aplicação.
+    O contexto permite que compartilhemos valores entre os componentes e também funções capazes de modificar esses valores. O valor modificado reflete em todos os contextos.
