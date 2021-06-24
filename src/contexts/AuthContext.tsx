@@ -5,14 +5,15 @@ import { createContext, ReactNode } from "react";
 import { auth } from "../services/firebase";
 
 type AuthContextType = {
+  // A variável user, aqui, ou é undefined ou é User. Depende se o usuário fez ou não login.
   user: User | undefined;
   signInWithGoogle: () => Promise<void>;
 }
 
 type User = {
-  id: String;
-  name: String;
-  avatar: String;
+  id: string;
+  name: string;
+  avatar: string;
 }
 
 type AuthContextProviderProps = {
