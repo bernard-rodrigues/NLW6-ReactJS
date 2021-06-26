@@ -74,3 +74,6 @@ Para trabalhar o roteamento das páginas utilizamos uma biblioteca React de rote
 Contexto:
     A forma que o React utiliza para compartilhar informações entre todos os componentes da aplicação.
     O contexto permite que compartilhemos valores entre os componentes e também funções capazes de modificar esses valores. O valor modificado reflete em todos os contextos.
+
+Componente vs Hook:
+    O componente é um item visual que se repete por diversas vezes no HTML (um botão, por exemplo) enquanto o Hook é uma funcionalidade frequente, não visual, mas presente em diversas páginas do app.

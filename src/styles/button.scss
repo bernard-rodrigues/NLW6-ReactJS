@@ -1,5 +1,5 @@
 .button{
-    height:50px;
+    height: 50px;
     border-radius: 8px;
     font-weight: 500;
     background: #835afd;
@@ -17,6 +17,12 @@
 
     img{
         margin-right: 8px;
+    }
+
+    &.outlined{
+        background: #FFF;
+        border: 1px solid #835afd;
+        color: #835afd;
     }
 
     &:not(:disabled):hover{
