@@ -18,8 +18,8 @@ The project was entirely structured via Typescript, with SASS styling. The authe
 The Realtime Database was responsible for managing the rooms and active users, listing the closed rooms, in addition to maintaining the questions and number of likes, from the users' perspective; and highlights, mark as read and delete, from the administrator's perspective.
 <img src="https://github.com/bernard-rodrigues/NLW6-ReactJS/blob/main/screenshots/firebaseRules.png" alt="Authentication Rules"/>
 
-### Hook de autenticação de usuários
+### User authentication hook
 A shared authentication hook was created through the various screens whose user can or needs to be logged in.
 <img src="https://github.com/bernard-rodrigues/NLW6-ReactJS/blob/main/screenshots/authLogin.png" alt="Authentication Hook"/>
 
-**Visite a aplicação:** https://letmeask-1d3e8.web.app/
+**Visit the application:** https://letmeask-1d3e8.web.app/
